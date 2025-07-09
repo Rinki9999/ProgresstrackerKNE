@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .dashboard {
+    max-width: 70%;
+    margin: auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  .progress-bar {
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 5px;
+  }
+  
+  .progress {
+    background: linear-gradient(to right, #4caf50, #81c784);
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+  }
+  
+  .bar {
+    margin-bottom: 15px;
+  }
+  

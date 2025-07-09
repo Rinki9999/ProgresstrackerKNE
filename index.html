@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Student Info -->
+    <section class="profile">
+      <h2>Welcome, <span id="studentName">Rinki</span></h2>
+      <p>Campus Name: <span id="campus"></span></p>
+      <p>Current Topic: <span id="currentTopic">JavaScript</span></p>
+      <p>House: <span id="Housename"></span></p>
+
+    </section>
+
+    <!-- Module Tracker -->
+    <section class="module-tracker">
+      <h3>📘 Module Progress</h3>
+      <p >Current Module:<span id ="currentModule"></span></p>
+      <p>Module Duration: <span id="moduleDuration">28 days</span></p>
+      <p>Timeline: <span id="timeline">10 June – 20 July</span></p>
+      <div class="progress-bar">
+        <div class="progress" id="moduleProgress" style="width: 65%;">65%</div>
+      </div>
+    </section>
+
+    <!-- Discipline Tracker -->
+    <section class="discipline-tracker">
+      <h3>🌟 Discipline Tracker</h3>
+      <div class="bar">
+        <label>Culture:</label>
+        <div class="progress-bar"><div class="progress" id="cultureBar" style="width: 80%;">8/10</div></div>
+      </div>
+      <div class="bar">
+        <label>Behavior:</label>
+        <div class="progress-bar"><div class="progress" id="behaviorBar" style="width: 70%;">7/10</div></div>
+      </div>
+      <div class="bar">
+        <label>English:</label>
+        <div class="progress-bar"><div class="progress" id="englishBar" style="width: 90%;">9/10</div></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
