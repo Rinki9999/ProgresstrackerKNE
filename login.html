@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progress Tracker - Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <!-- EmailJS -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgAudio" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-dreams.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="login-container">
+    <h2>Progress Tracker Login</h2>
+
+    <label for="role">Select Role</label>
+    <select id="role" onchange="updateForm()">
+      <option value="">-- Choose Role --</option>
+      <option value="student">Student</option>
+      <option value="mentor">Mentor</option>
+      <option value="admin">Admin</option>
+    </select>
+
+    <form id="loginForm">
+      <div id="dynamicFields"></div>
+      <button type="submit">Sign In</button>
+    </form>
+
+    <div class="social-login">
+      <button onclick="signInWithGoogle()">
+        <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google" />
+        Google
+      </button>
+      <button onclick="signInWithFacebook()">
+        <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook" />
+        Facebook
+      </button>
+    </div>
+
+    <div class="create-account">
+      <a href="#" id="createAccountLink">Create Account</a>
+    </div>
+  </div>
+
+  <footer>
+    <button id="toggleSoundBtn" title="Play/Pause background music">🔊</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
