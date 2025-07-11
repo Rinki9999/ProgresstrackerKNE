@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Admin</div>
+
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <input type="text" placeholder="Search anything..." />
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Student</a>
+            <a href="#">Mentor</a>
+            <a href="#" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="section">
+            <h3>Students</h3>
+            <div id="student-container" class="card-container"></div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>
