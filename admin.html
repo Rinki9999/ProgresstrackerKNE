@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+
 </head>
 
 <body>
@@ -27,11 +28,51 @@
     </nav>
 
     <div class="main-container">
-        <div class="section">
-            <h3>Students</h3>
+        <div class="left-side">
             <div id="student-container" class="card-container"></div>
         </div>
+        <div>
+
+            <div class="right-side">
+                <div class="assign-section">
+                    <h2>Assign Mentor to Student</h2>
+                    <form id="assign-form">
+                        <label for="student">Enter Student Name:</label>
+                        <input type="text" id="student" placeholder="Type student name..." required>
+
+                        <br><br>
+
+                        <label for="mentor">Enter Mentor Name:</label>
+                        <input type="text" id="mentor" placeholder="Type mentor name..." required>
+
+                        <br><br>
+
+                        <button type="submit">Assign Mentor</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Total Students</th>
+                    </tr>
+                </thead>
+                <tbody id="module-table-body">
+                </tbody>
+            </table>
+
+        </div>
+
+
     </div>
+
+
+
+
+
     <script src="admin.js"></script>
 </body>
 
